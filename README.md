@@ -1,6 +1,6 @@
 # CWL and Dockerfile for running MSISensor v0.5
 
-## Version of tools in docker image (/container/Dockerfile)
+## Version of tools in docker image
 
 | Tool	| Version	| Location	|
 |---	|---	|---	|
