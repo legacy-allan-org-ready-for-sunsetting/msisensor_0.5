@@ -11,6 +11,8 @@ requirements:
   ResourceRequirement:
     ramMin: 16000
     coresMin: 2
+  InitialWorkDirRequirement: 
+    listing: [ inputs.n, inputs.t ]
 
 doc: |
   Run msisensor on tumor-normal bams to differentiate MSI (microsatellite instable) samples from MSS (microsatellite stable) ones
@@ -28,6 +30,7 @@ inputs:
     secondaryFiles: ["^.bai"]
     inputBinding:
       prefix: -n
+      valueFrom: $(self.basename)
 
   t:
     type: File
@@ -35,6 +38,7 @@ inputs:
     secondaryFiles: ["^.bai"]
     inputBinding:
       prefix: -t
+      valueFrom: $(self.basename)
 
   o:
     type: string
