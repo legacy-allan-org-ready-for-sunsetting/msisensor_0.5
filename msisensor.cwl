@@ -25,14 +25,14 @@ inputs:
   n:
     type: File
     doc: normal bam file
-    secondaryFiles: ["^.bai"]
+    secondaryFiles: ["^.bai", ".bai"]
     inputBinding:
       prefix: -n
 
   t:
     type: File
     doc: tumor bam file
-    secondaryFiles: ["^.bai"]
+    secondaryFiles: ["^.bai", ".bai"]
     inputBinding:
       prefix: -t
 
