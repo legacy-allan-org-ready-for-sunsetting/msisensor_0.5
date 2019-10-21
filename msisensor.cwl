@@ -12,7 +12,9 @@ requirements:
     ramMin: 16000
     coresMin: 2
   InitialWorkDirRequirement: 
-    listing: [ inputs.n, inputs.t ]
+    listing:
+      - $(inputs.n)
+      - $(inputs.t)
 
 doc: |
   Run msisensor on tumor-normal bams to differentiate MSI (microsatellite instable) samples from MSS (microsatellite stable) ones
