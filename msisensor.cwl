@@ -28,7 +28,7 @@ inputs:
     inputBinding:
       prefix: -n
     secondaryFiles:
-      - .bam.bai
+      - .bai
 
   t:
     type: File
@@ -36,7 +36,7 @@ inputs:
     inputBinding:
       prefix: -t
     secondaryFiles:
-      - .bam.bai
+      - .bai
 
   o:
     type: string
